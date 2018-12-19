@@ -1,0 +1,35 @@
+{
+  "name": "Tyger",
+  "version": "0.0.1",
+  "description": "A small multipurpose bot with moderation and fun commands.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "prepublish": "node util/setup.js"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metalcupcake5/tyger-bot.git"
+  },
+  "author": "metalcupcake5#6942",
+  "contributors": [
+    "NerdFactor#7392"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/metalcupcake5/tyger-bot#readme",
+  "dependencies": {
+    "better-sqlite-pool": "github:eslachance/better-sqlite-pool",
+    "chalk": "^2.4.1",
+    "discord.js": "^11.4.2",
+    "enmap": "^4.3.2",
+    "klaw": "^2.1.1",
+    "moment": "^2.22.2",
+    "moment-duration-format": "^2.2.2",
+    "readline-sync": "^1.4.9",
+    "ytdl-core": "^0.28.0"
+  }
+}
