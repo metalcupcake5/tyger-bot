@@ -12,8 +12,22 @@ const Enmap = require("enmap");
 const klaw = require("klaw");
 const path = require("path");
 
+global.servers = {};
 
-class GuideBot extends Client {
+/*const http = require('http');
+const express = require('express');
+const app = express();
+
+app.get("/", (request, response) => {
+  console.log(Date.now() + " Ping Received");
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);*/
+
+class TygerBot extends Client {
   constructor (options) {
     super(options);
 
@@ -163,7 +177,7 @@ class GuideBot extends Client {
 // This is your client. Some people call it `bot`, some people call it `self`,
 // some might call it `cootchie`. Either way, when you see `client.something`,
 // or `bot.something`, this is what we're refering to. Your client.
-const client = new GuideBot();
+const client = new TygerBot();
 console.log(client.config.permLevels.map(p => `${p.level} : ${p.name}`));
 
 // We're doing real fancy node 8 async/await stuff here, and to do that
