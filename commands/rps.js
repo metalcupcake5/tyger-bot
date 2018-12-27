@@ -6,7 +6,7 @@ class Rps extends Command {
       name: "rps",
       description: "Play rock paper scissors with the bot!",
       category: "Fun",
-      usage: "rockpaperscissors",
+      usage: "rockpaperscissors <rock|paper|scissors>",
       aliases: ["rps"]
     });
   }

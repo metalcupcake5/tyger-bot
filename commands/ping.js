@@ -10,10 +10,10 @@ class Ping extends Command {
     });
   }
 
-  async run (client, message, args, level) { // eslint-disable-line no-unused-vars
+  async run (message, args, level) { // eslint-disable-line no-unused-vars
     try {
       const msg = await message.channel.send("🏓 Ping!");
-      message.edit(`Pong! Latency is ${Math.round(client.ping)}ms`);
+      msg.edit(`🏓 Pong! Latency is ${Math.round(this.client.ping)}ms`);
     } catch (e) {
       console.log(e);
     }

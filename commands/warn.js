@@ -25,7 +25,7 @@ class Warn extends Command {
           "url": member.user.avatarURL
         },*/
         "author": {
-          "name": `${member.user.username} has been warned`,
+          "name": `${member.user.username} has been warned by ${message.member.displayName}`,
           "icon_url": member.user.avatarURL
         },
         "fields": [
