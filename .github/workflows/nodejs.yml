@@ -23,6 +23,7 @@ jobs:
     - run: npm i discord.js
     - run: npm i chalk
     - run: npm i better-sqlite-pool
+    - run: npm i moment-duration-format
     - run: npm i klaw
     - run: npm i moment
     - run: node index.js
