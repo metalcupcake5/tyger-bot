@@ -19,7 +19,12 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: sudo apt-get install python2.7
     - run: sudo apt-get install build-essential
-    - run: npm install
+    - run: npm i enmap@latest
+    - run: npm i discord.js
+    - run: npm i chalk
+    - run: npm i better-sqlite-pool
+    - run: npm i klaw
+    - run: npm i moment
     - run: node index.js
       env:
         CI: true
