@@ -17,6 +17,7 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: sudo dnf install python2.7
     - run: sudo apt-get install build-essential
     - run: npm install
     - run: node index.js
