@@ -9,7 +9,7 @@ const config = {
   "support": [],
 
   // Your Bot's Token. Available on https://discordapp.com/developers/applications/me
-  "token":  "NTI4NjA3MjA3NTc1NzgxMzc4.Xlnu4g.jxj8TpFyxPBpaLAtAWWe42l7tbI",
+  "token":  "",
 
   // Default per-server settings. These settings are entered in a database on first load,
   // And are then completely ignored from this file. To modify default settings, use the `conf` command.
